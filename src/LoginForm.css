@@ -1,0 +1,54 @@
+.Container {
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+p{
+    color: red;
+    font-size: 12px;
+
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    border-radius: 12px;
+    margin: 10px;
+    display: flex;
+}
+
+.item-1 {
+    flex: 2;
+}
+
+.item-2 {
+    flex: 5;
+}
+
+.item-3 {
+    flex: 3;
+}
+
+.item-4 {
+    flex: 2;
+}
+
+input[type="text"],
+select {
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid grey;
+    display: inline-block;
+}
