@@ -2,7 +2,9 @@ import loginFormStyle from "./LoginFormCss"
 import "./LoginForm.css"
 import React,{useState} from "react"
 import InputTypeComponent from "./InputTypeComponent"
+import { AuthContext } from "./App"
 function LoginForm() {
+    const {dispatch} = React.useContext(AuthContext)
 /*
 inline
 create style object
@@ -19,6 +21,9 @@ const [formErrors,setFormErrors] = useState({})
 const handeSubmitAction = () => {
  console.log("submit clicked")
  console.log("form value",formValue)
+
+ dispatch({type:"Login",payload:{token:"12345"}})
+
     const emailReg = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
    const error = {} ;
